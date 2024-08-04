@@ -1,4 +1,4 @@
-const toBool = (x) => x == 'true'
+nconst toBool = (x) => x == 'true'
 const { Sequelize } = require('sequelize')
 const { existsSync } = require('fs')
 const path = require('path')
@@ -33,7 +33,7 @@ module.exports = {
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
   STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,Mishael',
-  ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE) || 'true',
+  ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || 'true',
   LOG_MSG: toBool(process.env.LOG_MSG) || false,
   RMBG_KEY: process.env.RMBG_KEY || 'null',
   BAILEYS_LOG_LVL: process.env.BAILEYS_LOG_LVL || 'silent',
