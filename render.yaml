@@ -3,7 +3,7 @@ services:
     name: levanter
     runtime: docker
     branch: master
-    repo: 'https://github.com/lyfe00011/whatsapp-bot-md.git'
+    repo: 'https://github.com/Mperomishael/whatsapp-bot-md.git'
     plan: free
     autoDeploy: true
     envVars:
@@ -12,7 +12,7 @@ services:
       - key: PREFIX
         sync: false
       - key: STICKER_PACKNAME
-        value: ',LyFE'
+        value: ',Mishael'
       - key: RMBG_KEY
         value: 'null'
       - key: WARN_LIMIT
@@ -30,7 +30,7 @@ services:
       - key: ANTI_DELETE
         value: 'off'
       - key: AUTO_STATUS_VIEW
-        value: 'false'
+        value: 'true'
       - key: SEND_READ
         value: 'false'
       - key: SESSION_ID
